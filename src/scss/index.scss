@@ -1,0 +1,42 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.header {
+  font-family: 'montserrat';
+  display: grid;
+  margin: 0;
+  place-items: center center;
+  margin-top: 20px;
+}
+
+.auto-grid {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size), 1fr)
+  );
+  grid-gap: 1rem;
+}
+
+.container {
+  font-family: 'montserrat';
+  font-size: 2rem;
+  display: grid;
+  grid-gap: 20px;
+  align-items: center;
+  margin-left: 28%;
+  margin-right: 27%;
+  margin-top: 10%;
+}
+
+.card-box {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 6px;
+  text-align: center;
+  background-color: #f1f1f1;
+  height: 200px;
+}
